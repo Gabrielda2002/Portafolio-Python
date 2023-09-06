@@ -5,4 +5,4 @@ num=input()
 if num.isdigit() and len(num) == 5 and int(num) >0:
     print("El numero ingresado cumple con las condiciones")
 else:
-    print("El numero no es valido, por favor ingrese un numero \npositivo y de 5 cifras.")1
+    print("El numero no es valido, por favor ingrese un numero \npositivo y de 5 cifras.")
