@@ -1,13 +1,18 @@
+contador_negativos = 0
+suma_positivos = 0
+
 while True:
-    print("Por favor ingrese la suma total de dinero de los productos que llevara el cliente: ")
-    total_neto = float(input())
-
-    if total_neto >0 :
-        descuento = total_neto-(total_neto*0.20)
-        print(f"El total con descuento es de: {descuento}")
-
-        agregar_iva = descuento+(descuento*0.10)
-        print(f"El total a pagar incluyendo iva es de: {agregar_iva}")
+    print("Por favor ingrese un numero (para terminar el programa ingrese 0): ")
+    numero = float(input())
+    
+    
+    if numero == 0:
+        print("Ha finalizado el programa!")
         break
-    elif total_neto == 0 :
-        print("Se le pedira al usuario nuevamente")
+    elif numero > 0:
+        suma_positivos += numero
+    else:
+        contador_negativos += 1
+
+print(f"La suma de los numeros posivos que ha ingresado es: {suma_positivos}.")
+print(f"Hay {contador_negativos} numeros negativos.")
