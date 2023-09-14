@@ -14,12 +14,3 @@ def mostrar(dato_mensaje):
     print(dato_mensaje)
 
 ingresar()
-
-
-
-
-
-
-#solicitud par que el usuario ingrese el numero
-
-#validacion con if
